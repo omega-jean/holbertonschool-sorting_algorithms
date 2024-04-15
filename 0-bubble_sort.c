@@ -10,6 +10,7 @@ void bubble_sort(int *array, size_t size)
 	size_t i = 0;
 	int temp;
 	int swap = 1;
+	size_t count;
 
 	if (array == NULL || size < 2) /* Check if the array is NULL */
 					  /* or has less than 2 elements */
@@ -18,7 +19,7 @@ void bubble_sort(int *array, size_t size)
 	while (swap)
 	{
 		swap = 0;
-		size_t count = 0;
+		count = 0;
 
 		while (count < size - i - 1) /* Scroll the table to size - i - 1 */
 		{
